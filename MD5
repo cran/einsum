@@ -1,0 +1,17 @@
+022a84989227a4d6cc49abbd21321bec *DESCRIPTION
+b45e767694f007b17632bdb2e6da5da2 *LICENSE
+8fcece1f5280093d1f2ec2fe8e689583 *NAMESPACE
+c5583fd21b0af83f4b1e96dc54d8abc3 *NEWS.md
+6cd621c442de39ec7a6aa90c13b88514 *R/RcppExports.R
+302d942004fce8b45ab9d718e78d8ee4 *R/einsum-package.R
+93b7797af53c8e65c6eac2f7c7907a6a *R/einsum.R
+775925bf8484f8ae3eef3e9817c5c47b *R/einsum_generator.R
+182eadec00544d38a6626e71f128a0eb *README.md
+0075d7d880a48a2af36299c2c16962ce *build/einsum.pdf
+d06c31e82d4d00cf8e56884b5580bd1f *man/einsum.Rd
+e0d88a066eeb7e62caf9f562769cad84 *man/einsum_package.Rd
+51627a1522d508cacf1673e45979132f *src/RcppExports.cpp
+05ebed966ef917da1d5f4f0c34998ec2 *src/code.cpp
+26459d0e8b3d132e1927c86a38e66e0e *tests/testthat.R
+c0184f8fad2ebb826346ba6f2a352272 *tests/testthat/numpy_comparisons.R
+fb5cf8964d79fdf6338074c9a494dcd8 *tests/testthat/test-einsum.R
