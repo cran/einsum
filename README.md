@@ -8,7 +8,7 @@
 [![R build
 status](https://github.com/const-ae/einsum/workflows/R-CMD-check/badge.svg)](https://github.com/const-ae/einsum/actions)
 [![Codecov test
-coverage](https://codecov.io/gh/const-ae/einsum/branch/master/graph/badge.svg)](https://codecov.io/gh/const-ae/einsum?branch=master)
+coverage](https://codecov.io/gh/const-ae/einsum/branch/master/graph/badge.svg)](https://app.codecov.io/gh/const-ae/einsum?branch=master)
 <!-- badges: end -->
 
 [Einstein summation](https://en.wikipedia.org/wiki/Einstein_notation) is
@@ -22,8 +22,15 @@ not have a standardized name.
 
 ## Installation
 
-You can install the development version from
-[GitHub](https://github.com/einsum) with:
+You can install the package from
+[CRAN](https://CRAN.R-project.org/package=einsum) with:
+
+``` r
+install.packages("einsum")
+```
+
+or if you want to use the development version from
+[GitHub](https://github.com/einsum):
 
 ``` r
 # install.packages("devtools")
@@ -122,12 +129,12 @@ bench::mark(
   einsum = einsum("abc, cd, ba -> d", arr1, arr2, arr3),
   einsum_generator = array_prod(arr1, arr2, arr3)
 )
-#> # A tibble: 3 x 6
+#> # A tibble: 3 × 6
 #>   expression            min   median `itr/sec` mem_alloc `gc/sec`
 #>   <bch:expr>       <bch:tm> <bch:tm>     <dbl> <bch:byt>    <dbl>
-#> 1 tensor            61.22µs  71.23µs    12995.    2.93KB     84.5
-#> 2 einsum            248.1µs 266.25µs     3595.    2.49KB     25.2
-#> 3 einsum_generator   2.94µs   3.42µs   245344.    2.49KB     24.5
+#> 1 tensor             48.6µs  52.02µs    18215.    2.93KB     25.4
+#> 2 einsum           380.66µs 403.17µs     2373.    2.49KB     23.5
+#> 3 einsum_generator   3.85µs   4.32µs   196916.    2.49KB     19.7
 ```
 
 Lastly, you can also generate C++ code if you need an efficient
